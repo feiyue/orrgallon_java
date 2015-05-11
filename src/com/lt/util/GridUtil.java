@@ -100,7 +100,7 @@ public class GridUtil {
 		
 		for (int i = displayCursorModel.getExplainplanindex(); i <= displayCursorModel.getExplainplanindexafter(); i++) {
 			String pto = MapUtils.getString((Map) data.get(i), "PLAN_TABLE_OUTPUT");
-			if(pto.startsWith("------")){
+			if(pto.startsWith("-----")){
 				continue;
 			}
 			a = p.matcher(pto.replaceAll("\\|$", ""));
